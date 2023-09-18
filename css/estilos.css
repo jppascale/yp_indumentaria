@@ -16,6 +16,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Questrial', sans-serif;
 }
 
 /*===== ESTRUCTURA GENERAL DEL SITIO =====*/
@@ -108,7 +109,6 @@ h3{
 }
 
 p{
-    font-family: 'Questrial', sans-serif;
     color: #90A6BB;
     line-height: 150%;
     /* padding: 1%; */
@@ -145,6 +145,7 @@ video{
 
 .aside{
     grid-area: aside;
+
 }
 
 #map{
@@ -152,8 +153,27 @@ video{
     width: 100%;
 }
 
+.grilla_productos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+    gap: 5%;
+}
 
-/*  */
+.producto{
+    width: 20%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.producto img{
+    width: 75%;
+    height: auto;
+}
+
+
+/* Dispositivo móvil */
 @media screen and (max-width:700px){
     .article{
         grid-template-columns: 1fr;
@@ -177,6 +197,12 @@ video{
         margin-left: 0%;
         width: 100%;
         
+    }
+
+    .producto{
+        width: 45%;
+        text-align: center;
+        margin-top: 2%;
     }
     
 }
