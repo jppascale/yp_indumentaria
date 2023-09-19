@@ -114,11 +114,6 @@ p{
     /* padding: 1%; */
 }
 
-video{
-    box-shadow: 1rem 1rem 3rem #FF5BDE, -1rem -1rem 3rem #FF5BDE;
-    height: 100%;
-    max-height: 550px;
-}
 
 .article{
     display: grid;
@@ -145,7 +140,18 @@ video{
 
 .aside{
     grid-area: aside;
+    position: relative;;
+}
 
+video.aside{
+    box-shadow: 1rem 1rem 3rem #FF5BDE, -1rem -1rem 3rem #FF5BDE;
+    height: 100%;
+    max-height: 550px;
+}
+
+img.aside{
+    position: sticky;
+    top:0;
 }
 
 #map{
@@ -165,16 +171,29 @@ video{
     width: 20%;
     text-align: center;
     margin-top: 2%;
+    padding: 2%;
+    box-shadow: 0.5rem 0.5rem 1rem #90A6BB;
+    /* border-radius: 10px; */
+    border-color: #90A6BB;
 }
 
 .producto img{
     width: 75%;
     height: auto;
+    border-radius: 10px;
 }
 
 
 /* Dispositivo móvil */
 @media screen and (max-width:700px){
+    /*===== ESTRUCTURA GENERAL DEL SITIO MOBILE =====*/
+    .container{
+        grid-template-rows: 0.2fr 3fr 0.2fr;
+        row-gap: 0.2%;
+    }
+
+    /*===== FIN ESTRUCTURA GENERAL DEL SITIO MOBILE =====*/
+
     .article{
         grid-template-columns: 1fr;
         grid-template-rows: 0.1fr 0.3fr 0.6fr;
@@ -183,14 +202,18 @@ video{
                              'aside'
                              'art';
         justify-items: center;
-        gap: 2%
-    
+        gap: 0%;
     }
 
-    video{
+    video.aside{
         height: auto;
         width: 100%;
         max-width: 367px;
+    }
+
+    img.aside{
+        position: inherit;
+        bottom: 0;
     }
 
     #map{
@@ -201,8 +224,6 @@ video{
 
     .producto{
         width: 45%;
-        text-align: center;
-        margin-top: 2%;
     }
     
 }
