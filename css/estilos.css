@@ -25,7 +25,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: va(--fuente_texto);
+    font-family: var(--fuente_texto);
 }
 
 /*===== ESTRUCTURA GENERAL DEL SITIO =====*/
