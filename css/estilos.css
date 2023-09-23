@@ -12,11 +12,20 @@ Blanco (junto al gris y el rosa que predominan en el local)
 Negro (hay cartelería en negro, en vidriera, no es predominante)
 */
 
+:root{
+    --fucsia: #FF5BDE;
+    --gris: #90A6BB;
+    --rosa: #DD929C;
+    --blanco: rgb(255, 255, 255);
+    --fuente_texto: 'Questrial', sans-serif;
+    --fuente_titulos: 'Ysabeau Office', sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Questrial', sans-serif;
+    font-family: va(--fuente_texto);
 }
 
 /*===== ESTRUCTURA GENERAL DEL SITIO =====*/
@@ -39,7 +48,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     text-align: center;
 
     border-bottom-width: 1%;
-    border-bottom-color: #FF5BDE;
+    border-bottom-color: var(--fucsia);
     border-bottom-style: solid;
 
 }
@@ -53,19 +62,20 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 
 .menu a{
     text-decoration: none;
-    font-family: 'Ysabeau Office', sans-serif; 
+    font-family: var(--fuente_titulos); 
     font-weight: 700;
-    color: #FF5BDE;
+    color: var(--fucsia);
     margin-right: 2%;
     font-size: 120%;
 }
 
 .menu a:visited{
-    color: #FF5BDE;
+    color: var(--fucsia);
 }
 
 .menu a:hover{
-    background-color: rgb(207, 207, 207);
+    /* background-color: rgb(207, 207, 207); */
+    text-shadow: 0px 5px 10px var(--fucsia), 0px -5px 10px var(--fucsia);
     border-radius: 5%;
 }
 
@@ -75,8 +85,8 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 
 .footer{
     grid-area: f;
-    background-color: #FF5BDE;
-    color: white;
+    background-color: var(--fucsia);
+    color: var(--blanco);
 }
 
 .links_footer{
@@ -84,12 +94,12 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     display: block;
     margin: 0.5%;
     text-decoration: none;
-    font-family: 'Ysabeau Office', sans-serif; 
+    font-family: var(--fuente_titulos); 
 
 }
 
 .footer a:visited{
-    color: white;
+    color: var(--blanco);
 }
 
 
@@ -102,14 +112,14 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 /*===== CONTENIDO =====*/
 
 h3{
-    font-family: 'Ysabeau Office', sans-serif; 
+    font-family: var(--fuente_titulos); 
     font-size: 125%;
-    color: #FF5BDE;
+    color: var(--fucsia);
     margin-bottom: 2%;
 }
 
 p{
-    color: #90A6BB;
+    color: var(--gris);
     line-height: 150%;
     /* padding: 1%; */
 }
@@ -144,7 +154,7 @@ p{
 }
 
 video.aside{
-    box-shadow: 1rem 1rem 3rem #FF5BDE, -1rem -1rem 3rem #FF5BDE;
+    box-shadow: 0rem 1rem 3rem var(--fucsia), 0rem -1rem 3rem var(--fucsia);
     height: 100%;
     max-height: 550px;
 }
@@ -172,9 +182,9 @@ img.aside{
     text-align: center;
     margin-top: 2%;
     padding: 2%;
-    box-shadow: 0.5rem 0.5rem 1rem #90A6BB;
+    box-shadow: 0.5rem 0.5rem 1rem var(--gris);
     /* border-radius: 10px; */
-    border-color: #90A6BB;
+    border-color: var(--gris);
 }
 
 .producto img{
