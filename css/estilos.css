@@ -33,11 +33,11 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 .container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 0.5fr 3fr 0.5fr;
+    grid-template-rows: 0.5fr 3fr minmax(0.5fr, 100px);
     grid-template-areas: 'h h h h h h'
                          'm m m m m m'
                          'f f f f f f';
-    row-gap: 4%;
+    row-gap: 1%;
     margin: 2%;
     margin-top: 0%;
 
@@ -128,7 +128,7 @@ p{
 .article{
     display: grid;
     grid-template-columns: 0.9fr 0.1fr;
-    grid-template-rows: 0.1fr 0.9fr;
+    grid-template-rows: minmax(0.1fr,60px) 0.9fr;
     column-gap: 2%;
     grid-template-areas: 'title title' 
                          'art aside';
@@ -175,10 +175,13 @@ img.aside{
     flex-direction: row;
     justify-content: left;
     gap: 5%;
+    overflow: auto;
+    padding-bottom: 5%;
 }
 
 .producto{
     width: 20%;
+    max-width: 200px;
     text-align: center;
     margin-top: 2%;
     padding: 2%;
