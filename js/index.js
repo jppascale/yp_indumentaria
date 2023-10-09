@@ -45,6 +45,12 @@
     flechaDerecha.addEventListener("click", ()=>{
         tamaño = elementos.offsetWidth;
         elementos.scrollLeft += tamaño;
+
+        const indicadorActivo = document.querySelector(".indicadores .activo");
+        if(indicadorActivo.nextSibling){
+            indicadorActivo.nextSibling.classList.add("activo");
+            indicadorActivo.classList.remove("activo");
+        }
         
     });
 
@@ -52,6 +58,12 @@
     flechaIzquierda.addEventListener("click", ()=>{
         tamaño = elementos.offsetWidth;
         elementos.scrollLeft -= tamaño;
+
+        const indicadorActivo = document.querySelector(".indicadores .activo");
+        if(indicadorActivo.previousSibling){
+            indicadorActivo.previousSibling.classList.add("activo");
+            indicadorActivo.classList.remove("activo");
+        }
         
     });
 
@@ -61,14 +73,19 @@
     for(let i = 0; i < numDePaginas; i++){
         let indicador = document.createElement("button");
         
-        if(indicador === 0){
+        if(i === 0){
+
             indicador.classList.add("activo");
         
         }
         document.querySelector(".indicadores").appendChild(indicador);
 
-        indicador.addEventListener("click", ()=>{
+        indicador.addEventListener("click", (e)=>{
             elementos.scrollLeft = i * elementos.offsetWidth;
+
+            document.querySelector(".indicadores .activo").classList.remove("activo");
+
+            e.target.classList.add("activo");
         });
 
 
