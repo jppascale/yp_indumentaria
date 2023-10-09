@@ -231,7 +231,7 @@ img.aside{
 
 
 /* Dispositivo móvil */
-@media screen and (max-width:700px){
+@media screen and (max-width:425px){
     /*===== ESTRUCTURA GENERAL DEL SITIO MOBILE =====*/
     .container{
         grid-template-rows: 0.2fr 3fr 0.2fr;
@@ -242,7 +242,7 @@ img.aside{
 
     .article{
         grid-template-columns: 1fr;
-        grid-template-rows: 0.1fr 0.3fr 0.6fr;
+        grid-template-rows: 0.01fr 0.01fr 1.5fr;
         column-gap: 2%;
         grid-template-areas: 'title' 
                              'aside'
@@ -260,6 +260,8 @@ img.aside{
     img.aside{
         position: inherit;
         bottom: 0;
+        height: 300px;
+        width: auto;
     }
 
     #map{
@@ -272,6 +274,22 @@ img.aside{
         width: 45%;
     }
     
+}
+
+/* Tabletas */
+
+@media screen and (min-width:425px) and (max-width:1020px){
+    .article{
+         grid-template-columns: 0.75fr 0.25fr;
+    }
+    img.aside{
+        width: 200px;
+        height: auto;
+    }
+
+    .producto{
+        min-width: 120px;
+    }
 }
 
 /*===== FIN CONTENIDO =====*/
