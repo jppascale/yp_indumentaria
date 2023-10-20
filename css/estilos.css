@@ -30,7 +30,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 
 /*===== ESTRUCTURA GENERAL DEL SITIO =====*/
 
-/* .container{
+.container{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 0.5fr 3fr 0.5fr;
@@ -41,7 +41,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     margin: 2%;
     margin-top: 0%;
 
-} */
+} 
 
 .header{
     grid-area: h;
@@ -396,6 +396,7 @@ main .slider__review {
     margin-bottom: 70px;
     width: 90%;
     margin: auto;
+    background-color: beige;
 }
 
 .productos__recomendados .contenedor_principal_recomendados {
@@ -446,8 +447,9 @@ main .slider__review {
 
 .productos__recomendados .carousel_productos .todos_los_productos .productos {
     min-width: 20%;
-    transition: .3s ease all;
+    transition: .3s ease-in-out;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    margin: 0 2px;
 }
 
 .productos__recomendados .carousel_productos .todos_los_productos .productos:hover {
@@ -458,6 +460,7 @@ main .slider__review {
 .productos__recomendados .carousel_productos .todos_los_productos .productos img {
     width: 100%;
     vertical-align: top;
+    border-radius: 5px;
 }
 
 @media(max-width: 700px){
