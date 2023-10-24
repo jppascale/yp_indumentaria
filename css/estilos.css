@@ -150,7 +150,12 @@ h3{
     color: var(--fucsia);
     margin-bottom: 2%;
 }
-
+h2 {
+    font-family: var(--fuente_titulos);
+    font-size: 125%;
+    color: var(--fucsia);
+    margin-bottom: 2%;
+}
 p{
     color: var(--gris);
     line-height: 150%;
@@ -292,4 +297,23 @@ img.aside{
     }
 }
 
+.faq {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+.title {
+    text-align: center; 
+}
 /*===== FIN CONTENIDO =====*/
