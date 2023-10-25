@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Qwitcher+Grypen&family=Ysabeau+Office:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"       crossorigin="anonymous"/>
 </head>
+
 <body>
 <div class="container">
     <header class="header">
@@ -19,44 +21,75 @@
             <a href="./catalogo.html">Catálogo</a>
         </nav>
     </header>
-        <main>
-        <section class="section">
-            <h2>Dejanos tu Consulta</h2>
-            <form action="">
-                <label for="nombre">Nombre</label>
-                <br>
-                    <input type="text" name="nombre" id="nombre">                
-                <br>
-                <label for="apellido">Apellido</label>
-                <br>
-                    <input type="text" name="apellido" id="apellido" required>
-                <br>
-                <label for="mail">Mail</label>
-                <br>
-                    <input type="email" required>
-                <br>
+
+        <section class="contact">
+            <form action="" class="formulario" id="formulario">
+                <h2>Dejanos tu Consulta</h2>            
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" name="nombre" id="nombre" autocomplete="off"/>   
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="far fa-ckeck-circle success-icon"></i>
+                    <div class="error"></div>       
+                </div>
+
+                <div> 
+                    <label for="apellido">Apellido</label>
+                    <i class="fas fa-user"></i>
+
+                    <input type="text" name="apellido" id="apellido" required autocomplete="off"/>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <i class="far fa-ckeck-circle succes-icon"></i>
+                    <div class="error"></div>
+                </div>
+
+                <div>
+                    <label for="mail">Mail</label>
+                    <i class="far fa-envelope"></i>
+
+                    <input type="email" name="mail" id="mail" required autocomplete="off"/>
+                    <i class="fas fa-exclamation-circle failure-icon"></i>
+                    <i class="far fa-ckeck-circle succes-icon"></i>
+                    <div class="error"></div>
+                </div>
+
+                <div>
                 <label for="motivo">Motivo de tu consulta</label>
-                <br>
+                </div>
+
+                <div>
                     <select name="motivo" id="motivo">
-                        <option value="0">----</option>
+                        <option value="0">Seleccione</option>
                         <option value="1">Consulta</option>
                         <option value="2">Cambio</option>
                         <option value="3">Estado de Pedido</option>
                     </select>
-                <br>
-                <label for="mensaje">Mensaje</label>
-                <br>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
 
+                <div class="mensaje" id="mensaje">
+                <label for="mensaje">Mensaje</label>
+                </div>
+
+                <div>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="enviar">
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                    <p class="msj-exito" id="msj-exito">Formulario enviado</p>
+                </div>
             </form>
+            <a href="mailto:carina.p.garcia@gmail.com" id="sendmail"></a>
 
         </section>
 
-    </main>
+        <script src="js/formulario.js"></script>
 
    
     <footer class="footer">
-        <a class="links_footer" href="">Contacto <img src="./img/contact_icon.png" alt="Ícono contacto"></a>
+        <a class="links_footer" href="./Contacto.html">Contacto <img src="./img/contact_icon.png" alt="Ícono contacto"></a>
         <a class="links_footer" href="">Preguntas frecuentes <img src="./img/help_icon.png" alt="Ícono preguntas frecuentes"></a>
         <a class="links_footer" href="">Legales <img src="./img/legal_icon.png" alt="Ícono legales"></a>
     </footer>

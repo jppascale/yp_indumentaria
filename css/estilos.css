@@ -87,6 +87,10 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     grid-area: f;
     background-color: var(--fucsia);
     color: var(--blanco);
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;     
 }
 
 .links_footer{
