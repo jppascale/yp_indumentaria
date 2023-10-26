@@ -87,6 +87,7 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     grid-area: f;
     background-color: var(--fucsia);
     color: var(--blanco);
+    
 }
 
 .links_footer{
@@ -100,6 +101,31 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
 
 .footer a:visited{
     color: var(--blanco);
+}
+
+
+.footer img {
+    width: 25px;
+    margin: 0 5px;
+    padding: 5px;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__right {
+    width: 50%;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    width: 50%;
+}
+.footer__left ul {
+    display: flex;
 }
 
 #cartel-luminoso{
