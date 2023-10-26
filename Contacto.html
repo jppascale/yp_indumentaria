@@ -24,8 +24,10 @@
 
         <section class="contact">
             <form action="" class="formulario" id="formulario">
-                <h2>Dejanos tu Consulta</h2>            
-                <div>
+                <h2>Dejanos tu Consulta</h2> 
+
+                <!--Campo Nombre  -->
+                <div class="formulario__campo" id="campo__nombre">
                     <label for="nombre">Nombre</label>
                     <i class="fas fa-user"></i>
 
@@ -35,6 +37,7 @@
                     <div class="error"></div>       
                 </div>
 
+                <!--Campo Apellido  -->
                 <div> 
                     <label for="apellido">Apellido</label>
                     <i class="fas fa-user"></i>
@@ -45,7 +48,8 @@
                     <div class="error"></div>
                 </div>
 
-                <div>
+                <!--Campo Mail  -->
+                <div class="formulario__campo" id="campo__mail">
                     <label for="mail">Mail</label>
                     <i class="far fa-envelope"></i>
 
@@ -55,6 +59,7 @@
                     <div class="error"></div>
                 </div>
 
+                <!--Campo Motivo  -->
                 <div>
                 <label for="motivo">Motivo de tu consulta</label>
                 </div>
@@ -68,6 +73,7 @@
                     </select>
                 </div>
 
+                <!--Campo Mensaje  -->
                 <div class="mensaje" id="mensaje">
                 <label for="mensaje">Mensaje</label>
                 </div>
@@ -76,6 +82,7 @@
                     <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
                 </div>
 
+                <!--Campo Enviar  -->
                 <div class="enviar">
                     <button type="submit" class="btn-enviar">Enviar</button>
                     <p class="msj-exito" id="msj-exito">Formulario enviado</p>
