@@ -26,6 +26,7 @@ const validarFormulario = (e) => {
 const validarCampo = (expresion, input, campo) => {
     if(expresion.test(input.value)){
       document.getElementById('campo__nombre').classList.remove('formulario__campo-incorrecto');
+      document.getElementById('campo__nombre').classList.add('formulario__campo-correcto');
     }
 }
 form = id("formulario"),
