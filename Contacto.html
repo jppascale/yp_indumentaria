@@ -29,7 +29,7 @@
                     <label for="nombre">Nombre</label>
                     <i class="fas fa-user"></i>
 
-                    <input type="text" name="nombre" id="nombre" autocomplete="off"/>   
+                    <input type="text" name="nombre" id="nombre" required autocomplete="off"/>   
                     <i class="fas fa-exclamation-circle"></i>
                     <i class="far fa-ckeck-circle success-icon"></i>
                     <div class="error"></div>       
@@ -60,8 +60,8 @@
                 </div>
 
                 <div>
-                    <select name="motivo" id="motivo">
-                        <option value="0">Seleccione</option>
+                    <select name="motivo" id="motivo" required>
+                        <option value="0">   </option>
                         <option value="1">Consulta</option>
                         <option value="2">Cambio</option>
                         <option value="3">Estado de Pedido</option>
@@ -73,7 +73,7 @@
                 </div>
 
                 <div>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" required></textarea>
                 </div>
 
                 <div class="enviar">
@@ -81,16 +81,15 @@
                     <p class="msj-exito" id="msj-exito">Formulario enviado</p>
                 </div>
             </form>
-            <a href="mailto:carina.p.garcia@gmail.com" id="sendmail"></a>
-
+           
         </section>
 
-        <script src="js/formulario.js"></script>
+        <script src="formulario.js"></script>
 
    
     <footer class="footer">
         <a class="links_footer" href="./Contacto.html">Contacto <img src="./img/contact_icon.png" alt="Ícono contacto"></a>
-        <a class="links_footer" href="">Preguntas frecuentes <img src="./img/help_icon.png" alt="Ícono preguntas frecuentes"></a>
+        <a class="links_footer" href="preguntas.html">Preguntas frecuentes <img src="./img/help_icon.png" alt="Ícono preguntas frecuentes"></a>
         <a class="links_footer" href="">Legales <img src="./img/legal_icon.png" alt="Ícono legales"></a>
     </footer>
 </div>

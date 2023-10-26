@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!-- <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YP Indumentaria</title>
@@ -9,9 +9,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&family=Qwitcher+Grypen&family=Ysabeau+Office:wght@100&display=swap" rel="stylesheet">
+</head> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YP Indumentaria</title>
+    <link rel="shortcut icon" href="./img/Logo-150.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Questrial&family=Qwitcher+Grypen&family=Ysabeau+Office:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="container">
+    
         <header class="header">
             <img src="./img/Logo-150.png" alt="Logo YP Indumentaria">
             <nav class="menu">
@@ -20,21 +35,187 @@
                 <a href="./catalogo.html">Catálogo</a>
             </nav>
         </header>
-        <main class="main">
-            <article class="article">
-                <h3 class="title">Inicio</h3>
-                    <p class="art">
-                        <a href="./index.html">Inicio</a>
-                        <a href="./Nosotras.html">Nosotras</a>
-                        <a href="./catalogo.html">Catálogo</a>
-                    </p>
-            </article>
+        <main class="main__principal">
+            <section class="slider">
+                <div class="slider__container container_slide">
+    
+                    <section class="slider__body slider__body--show" id="1">
+                        <div class="slider__texts">
+                            <h2 class="subtitle">Mallas y bikinis.</h2>
+                            <p class="slider__review">
+                                🩷No te pierdas nuestros modelitos de mallas enteras o bikinis que son hermososss!
+    
+                            </p>
+    
+    
+                        </div>
+    
+                        <figure class="slider__picture">
+                            <img src="./img/slider_img/Captura desde 2023-10-10 19-05-07.png" alt="foto1"
+                                class="slider__img">
+                        </figure>
+    
+                    </section>
+                    <section class="slider__body " id="2">
+                        <div class="slider__texts">
+                            <h2 class="subtitle">Jugá.</h2>
+                            <p class="slider__review">
+                                ⚡️Nueva campe “Lana” hermosa! Finita para esta temporada que se viene⚡️
+                                ⚡️Top red ideal para usar arriba de los tops!
+                                🩷Jogger cargo
+    
+                            </p>
+    
+    
+                        </div>
+    
+                        <figure class="slider__picture">
+                            <img src="./img/modelos/modelo1.png" alt="foto2" class="slider__img">
+                        </figure>
+    
+                    </section>
+                    
+                    <section class="slider__body" id="3">
+                        <div class="slider__texts">
+                            <h2 class="subtitle">Disfrutá.</h2>
+                            <p class="slider__review">
+                                ⚡De no creer lo hermoso que queda este conjuntoooo!⚡
+                                💘Calza + crop top "Print" podés usarlo junto o por separado con jean o otra reme!
+                                ⚡ conseguí estos y más looks en YP!
+    
+                            </p>
+    
+    
+                        </div>
+    
+                        <figure class="slider__picture">
+                            <img src="./img/modelos/modelo4.png" alt="foto1" class="slider__img">
+                        </figure>
+    
+                    </section>
+                    
+    
+                </div>
+    
+    
+            </section>
+    
+    
+    
+    
+    
+    
+    
+    
+            <section class="productos__recomendados">
+                <div class="contenedor_titulo_botones">
+                    <h3>Productos recomendados.</h3>
+                    <div class="indicadores">
+    
+                    </div>
+                </div>
+                <div class="contenedor_principal_recomendados">
+                    <button role="button" id="flecha_izquierda" class="flecha_izquierda"><i
+                            class="fa-solid fa-chevron-left"></i></button>
+    
+                    <div class="carousel_productos">
+                        <div class="todos_los_productos">
+    
+                            <div class="productos">
+                                <a href="./catalogo.html#producto1">
+                                    <img src="./img/catalogo/animal.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto2">
+                                    <img src="./img/catalogo/anime.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto3">
+                                    <img src="./img/catalogo/barbie.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto4">
+                                    <img src="./img/catalogo/carita.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto5">
+                                    <img src="./img/catalogo/corazon.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto6">
+                                    <img src="./img/catalogo/cuadros.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto7">
+                                    <img src="./img/catalogo/dedos.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto8">
+                                    <img src="./img/catalogo/estrellas.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto9">
+                                    <img src="./img/catalogo/animal.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto10">
+                                    <img src="./img/catalogo/anime.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto11">
+                                    <img src="./img/catalogo/barbie.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto12">
+                                    <img src="./img/catalogo/carita.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto13">
+                                    <img src="./img/catalogo/corazon.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto14">
+                                    <img src="./img/catalogo/cuadros.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto15">
+                                    <img src="./img/catalogo/dedos.jpg" alt="animal">
+                                </a>
+                            </div>
+                            <div class="productos">
+                                <a href="./catalogo.html#producto16">
+                                    <img src="./img/catalogo/estrellas.jpg" alt="animal">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <button role="button" id="flecha_derecha" class="flecha_derecha"><i
+                            class="fa-solid fa-chevron-right"></i></button>
+    
+                </div>
+            </section>
+    
         </main>
         <footer class="footer">
             <a class="links_footer" href="./Contacto.html">Contacto <img src="./img/contact_icon.png" alt="Ícono contacto"></a>
-            <a class="links_footer" href="">Preguntas frecuentes <img src="./img/help_icon.png" alt="Ícono preguntas frecuentes"></a>
+            <a class="links_footer" href="preguntas.html">Preguntas frecuentes <img src="./img/help_icon.png" alt="Ícono preguntas frecuentes"></a>
             <a class="links_footer" href="">Legales <img src="./img/legal_icon.png" alt="Ícono legales"></a>
         </footer>
-    </div>
+        <script src="./js/index.js"></script>
 </body>
 </html>

@@ -154,7 +154,12 @@ h3{
     color: var(--fucsia);
     margin-bottom: 2%;
 }
-
+h2 {
+    font-family: var(--fuente_titulos);
+    font-size: 125%;
+    color: var(--fucsia);
+    margin-bottom: 2%;
+}
 p{
     color: var(--gris);
     line-height: 150%;
@@ -280,6 +285,215 @@ img.aside{
     
 }
 
+/*  Estilos para el slider  */
+
+.main__principal {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    border-radius: 8px;
+    align-items: center;
+    
+    height: max-content;
+}
+
+main .slider {
+    background-color: var(--rosa);
+    padding: 40px 0 ;
+    height: 2%;
+    border-radius: 8px;
+    flex-wrap: wrap;
+    display: block;
+    width: 100%;
+    margin: 20px auto;
+}
+
+main  .slider__container {
+    display: grid;
+    grid-template-columns:  1fr ; 
+    width: 90%;
+    margin: auto;
+    border-radius: 8px;
+} 
+
+main .slider__body {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+    display: grid;
+    border-radius: 10px;
+    background-color: var(--gris);
+    grid-template-columns: 1fr max-content;
+    align-items: center;
+    transition: opacity 1.5s;
+    
+}
+
+
+main .slider__body--show {
+    opacity: 1;
+    pointer-events: unset;
+}
+
+main .slider__img {
+    width: 230px;
+    height: 230px;
+    background-color: var(--fucsia);
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+main .subtitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+main .slider__review {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.7;
+    color: black;
+}
+
+
+@media(max-width: 540px){
+    main .slider__body {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    main .slider__img {
+        width: 100%;
+        
+    }
+
+    
+}
+
+
+
+/*  Estilos para el showroom del main.  */
+
+/* ------ contenedor de titulo y controles ------*/
+
+.contenedor_titulo_botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor_titulo_botones h3 {
+    color: #000;
+    font-size: 30px;
+}
+
+.contenedor_titulo_botones .indicadores button {
+    background: var(--fucsia);
+    height: 5px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 3px;
+}
+
+.contenedor_titulo_botones .indicadores button:hover,
+.contenedor_titulo_botones .indicadores button.activo {
+    background: red;
+}
+
+/*----- contenedor principal del carousel y flechas ------*/
+.productos__recomendados {
+    margin-bottom: 70px;
+    width: 90%;
+    margin: auto;
+    background-color: beige;
+}
+
+.productos__recomendados .contenedor_principal_recomendados {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.productos__recomendados .contenedor_principal_recomendados .flecha_izquierda,
+.productos__recomendados .contenedor_principal_recomendados .flecha_derecha {
+    position: absolute;
+    border: none;
+    background-color: rgba(0, 0, 0, .3);
+    font-size: 30px;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 40px;
+    width: 50px;
+    color: fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.productos__recomendados .contenedor_principal_recomendados .flecha_izquierda:hover,
+.productos__recomendados .contenedor_principal_recomendados .flecha_derecha:hover {
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.productos__recomendados .contenedor_principal_recomendados .flecha_izquierda {
+    left: 0;
+}
+.productos__recomendados .contenedor_principal_recomendados .flecha_derecha {
+    right: 0;
+}
+
+.productos__recomendados .carousel_productos {
+    width: 100%;
+    padding: 20px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.productos__recomendados .carousel_productos .todos_los_productos {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.productos__recomendados .carousel_productos .todos_los_productos .productos {
+    min-width: 20%;
+    transition: .3s ease-in-out;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+    margin: 0 2px;
+}
+
+.productos__recomendados .carousel_productos .todos_los_productos .productos:hover {
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.productos__recomendados .carousel_productos .todos_los_productos .productos img {
+    width: 100%;
+    vertical-align: top;
+    border-radius: 5px;
+}
+
+@media(max-width: 700px){
+    .productos__recomendados .carousel_productos {
+        overflow: visible;
+    }
+    .productos__recomendados .carousel_productos .todos_los_productos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+    .productos__recomendados .indicadores,
+    .productos__recomendados .flecha_izquierda,
+    .productos__recomendados .flecha_derecha {
+    display: none;
+}
+}
+
 /* Tabletas */
 
 @media screen and (min-width:425px) and (max-width:1020px){
@@ -296,4 +510,23 @@ img.aside{
     }
 }
 
+.faq {
+    margin-bottom: 20px;
+    text-align: center; 
+}
+
+.question {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.answer {
+    display: none;
+    margin: 0 auto; 
+    max-width: 600px; 
+}
+
+.title {
+    text-align: center; 
+}
 /*===== FIN CONTENIDO =====*/
