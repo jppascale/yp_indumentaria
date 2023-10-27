@@ -552,13 +552,15 @@ main .slider__review {
     text-align: center; 
 }
 
+
 .contact{
-    width: 460px;
+    width: 600px;
+    
     height: auto;
-    margin: 50px auto;
+    margin: 0 auto;
     border-radius: 10px;
     padding-top: 30px;
-    padding-left: 200px;
+    padding-left: 50px;
 }
 
 /* ----- -----  Estilos para Validacion ----- ----- */
