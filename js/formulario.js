@@ -29,19 +29,19 @@ const validarCampo = (expresion, input, campo) => {
       document.getElementById('campo__nombre').classList.add('formulario__campo-correcto');
     }
 }
-form = id("formulario"),
+/*form = id("formulario"),
 
     msjError = classes("error"),
     iconoExito = classes("success-icon"),
     iconoFalla = classes("failure-icon");
 
 form.addEventListener("submit", (e) => {
-  e.preventDefault();
+  e.preventDefault();*/
 
  /* engine(nombre, 0, "Nombre no puede estar en blanco");
-  engine(mail, 1, "Email no puede estar en blanco");
+  engine(mail, 1, "Email no puede estar en blanco");*/
   /*engine(password, 2, "Password cannot be blank");*/
-});
+  
 
 let engine = (id, serial, message) => {
   if (id.value.trim() === "") {
