@@ -87,10 +87,6 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     grid-area: f;
     background-color: var(--fucsia);
     color: var(--blanco);
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;     
 }
 
 .links_footer{
@@ -106,21 +102,46 @@ Negro (hay cartelería en negro, en vidriera, no es predominante)
     color: var(--blanco);
 }
 
+
+.footer img {
+    width: 25px;
+    margin: 0 5px;
+    padding: 5px;
+}
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__right {
+    width: 50%;
+}
+
+.footer__left {
+    display: flex;
+    align-items: center;
+    color: var(--blanco);
+    width: 50%;
+}
+.footer__left ul {
+    display: flex;
+}
+
 #cartel-luminoso{
-    position: static;
+    position: relative;
     transform: skew(-15deg, -10deg);
     text-shadow: 0;
     animation-name: efecto_luminoso;
     animation-duration: 1s;
     animation-iteration-count: infinite;
     color: var(--fucsia);
-    /* font-family: var(--fuente_titulos); */
     font-family: 'Qwitcher Grypen', cursive;
     word-spacing: 10px;
     letter-spacing: 10px;
     font-size: 300%;
     text-align: right;
     padding-right: 5%;
+    z-index: -1; /*se envía "atrás" porque al minimizar la pantalla, tapaba otros elementos y no se podía interactuar en ellos*/
 }
 
 .header img{
@@ -188,6 +209,7 @@ p{
     display: flex;
     flex-direction: column;
     gap: 20px; 
+    overflow: auto;
 }
 
 .aside{
@@ -240,7 +262,7 @@ img.aside{
 
 
 /* Dispositivo móvil */
-@media screen and (max-width:425px){
+@media screen and (max-width:539px){
     /*===== ESTRUCTURA GENERAL DEL SITIO MOBILE =====*/
     .container{
         grid-template-rows: 0.2fr 3fr 0.2fr;
@@ -496,7 +518,7 @@ main .slider__review {
 
 /* Tabletas */
 
-@media screen and (min-width:425px) and (max-width:1020px){
+@media screen and (min-width:540px) and (max-width:1020px){
     .article{
          grid-template-columns: 0.75fr 0.25fr;
     }
@@ -528,6 +550,15 @@ main .slider__review {
 
 .title {
     text-align: center; 
+}
+
+.contact{
+    width: 460px;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-left: 200px;
 }
 
 /* ----- -----  Estilos para Validacion ----- ----- */
