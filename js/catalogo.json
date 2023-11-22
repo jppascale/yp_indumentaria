@@ -1,0 +1,114 @@
+[
+	{
+		"id": 1,
+		"img_url": "./img/catalogo/animal.jpg",
+		"img_alt": "Imagen modelo animal print",
+		"nombre": "Animal print",
+		"precio": 3500.00
+	},
+	{
+		"id": 2,
+		"img_url": "./img/catalogo/anime.jpg",
+		"img_alt": "Imagen modelo Animé",
+		"nombre": "Animé",
+		"precio": 3500.00
+	},
+	{
+		"id": 3,
+		"img_url": "./img/catalogo/barbie.jpg",
+		"img_alt": "Imagen modelo Barbie",
+		"nombre": "Barbie",
+		"precio": 7500.00
+	},
+	{
+		"id": 4,
+		"img_url": "./img/catalogo/carita.jpg",
+		"img_alt": "Imagen modelo Carita Feliz",
+		"nombre": "Carita Feliz",
+		"precio": 3500.00
+	},
+	{
+		"id": 5,
+		"img_url": "./img/catalogo/corazon.jpg",
+		"img_alt": "Imagen modelo Corazón",
+		"nombre": "Corazón",
+		"precio": 3500.00
+	},
+	{
+		"id": 6,
+		"img_url": "./img/catalogo/cuadros.jpg",
+		"img_alt": "Imagen modelo Cuadros",
+		"nombre": "Cuadros",
+		"precio": 5000.00
+	},
+	{
+		"id": 7,
+		"img_url": "./img/catalogo/dedos.jpg",
+		"img_alt": "Imagen modelo Dedos",
+		"nombre": "Dedos Adams",
+		"precio": 5000.00
+	},
+	{
+		"id": 8,
+		"img_url": "./img/catalogo/escocesa.jpg",
+		"img_alt": "Imagen modelo Escocesa",
+		"nombre": "Escocesa",
+		"precio": 5000.00
+	},
+	{
+		"id": 9,
+		"img_url": "./img/catalogo/estrellas.jpg",
+		"img_alt": "Imagen modelo Estrellas",
+		"nombre": "Estrellas",
+		"precio": 5000.00
+	},
+	{
+		"id": 10,
+		"img_url": "./img/catalogo/game.jpg",
+		"img_alt": "Imagen modelo Game",
+		"nombre": "Game",
+		"precio": 5000.00
+	},
+	{
+		"id": 11,
+		"img_url": "./img/catalogo/lilo.jpg",
+		"img_alt": "Imagen modelo Lilo & Stich",
+		"nombre": "Lilo & Stich",
+		"precio": 4000.00
+	},
+	{
+		"id": 12,
+		"img_url": "./img/catalogo/mariposas.jpg",
+		"img_alt": "Imagen modelo Mariposas",
+		"nombre": "Mariposas",
+		"precio": 5000.00
+	},
+	{
+		"id": 13,
+		"img_url": "./img/catalogo/minie.jpg",
+		"img_alt": "Imagen modelo Minie",
+		"nombre": "Mickey & Minie",
+		"precio": 5000.00
+	},
+	{
+		"id": 14,
+		"img_url": "./img/catalogo/new york.jpg",
+		"img_alt": "Imagen modelo New York",
+		"nombre": "New York",
+		"precio": 5000.00
+	},
+	{
+		"id": 15,
+		"img_url": "./img/catalogo/race.jpg",
+		"img_alt": "Imagen modelo Race",
+		"nombre": "Race",
+		"precio": 5000.00
+	},
+	{
+		"id": 16,
+		"img_url": "./img/catalogo/smile.jpg",
+		"img_alt": "Imagen modelo Smile",
+		"nombre": "Smile",
+		"precio": 5000.00
+	}
+]
