@@ -223,7 +223,7 @@ video.aside{
     max-height: 550px;
 }
 
-img.aside{
+.aside img{
     position: sticky;
     top:0;
 }
