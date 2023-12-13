@@ -1,7 +1,14 @@
 //Carga del catálogo a través de un JSON (a reemplazar cuando se desarrolle el backend)
 
+//Desarrollo
+// let URL_IMG = './img/catalogo/'
+// let HOST = 'http://localhost:5000'
+//Producción:
+let URL_IMG = 'https://www.pythonanywhere.com/user/jotapy79/files/home/jotapy79/yp_indumentaria/img/catalogo/'
+let HOST = 'https://jotapy79.pythonanywhere.com'
+
 //fetch('./js/catalogo.json')
-fetch('http://localhost:5000/productos')
+fetch( HOST + '/productos')
     .then(response=>{
         if (response.ok){
             return response.json()
@@ -20,13 +27,20 @@ fetch('http://localhost:5000/productos')
             producto.className = 'producto'
             producto.dataset.idProducto = prod.id
 
+            let btnEliminar = document.createElement('div')
+            btnEliminar.textContent='X'
+            btnEliminar.className = 'btn_eliminar'
+            btnEliminar.onclick = eliminarProducto
+            producto.appendChild(btnEliminar)
+
             let imagen = document.createElement('img')
-            imagen.src = prod.img_url
+            imagen.src = URL_IMG + prod.img_url
             imagen.alt = prod.img_alt
             producto.appendChild(imagen)
 
             let titulo = document.createElement('h4')
             titulo.textContent = prod.descripcion
+            titulo.onclick = getProducto
             producto.appendChild(titulo)
 
             let precio = document.createElement('p')
@@ -51,7 +65,7 @@ fetch('http://localhost:5000/productos')
             //La API devuelve un array de JSONs, uno por cada tipo de dólar.
             let cot = 0
             for (let cotizacion of data){
-                console.log(cotizacion)
+                // console.log(cotizacion)
                 if (cotizacion.casa == 'blue'){
                     cot = cotizacion.venta
                 }

@@ -14,6 +14,24 @@
                         </div>
                     </div>
                     <div class="aside">
+                        <form id="formulario" enctype="multipart/form-data" class="form_crud">
+                            <label for="descripcion">Descripción</label>
+                            <input type="text" name="descripcion" id="descripcion" required>
+                            <br>
+                            <label for="precio">Precio</label>
+                            <input type="number" name="precio" id="precio" value="0">
+                            <br>
+                            <label for="img_alt">Descripción imagen</label>
+                            <input type="text" name="img_alt" id="img_alt">
+                            <br>
+                            <label for="archivo">Seleccionar imagen</label>
+                            <input type="file" name="archivo" id="archivo">
+                            <br><br>
+                            <input type="hidden" name="idProducto" id="idProducto" value="">
+                            <input type="button" value="NUEVO" id="btnNuevo" class="boton_crud">
+                            <input type="button" value="ACTUALIZAR" id="btnActualizar" hidden class="boton_crud">
+                            <input type="button" value="CANCELAR" id="btnCancelar" class="boton_crud">
+                        </form>
                         <button id="carga_masiva">Cargar Catálogo</button>
                         <img src="./img/modelos/modelo4.png" alt="Imagen de modelo">
                     </div>

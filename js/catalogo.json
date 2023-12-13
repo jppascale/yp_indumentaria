@@ -1,112 +1,112 @@
 [
 	{
 		"id": 1,
-		"img_url": "./img/catalogo/animal.jpg",
+		"img_url": "animal.jpg",
 		"img_alt": "Imagen modelo animal print",
 		"descripcion": "Animal print",
 		"precio": 3500.00
 	},
 	{
 		"id": 2,
-		"img_url": "./img/catalogo/anime.jpg",
+		"img_url": "anime.jpg",
 		"img_alt": "Imagen modelo Animé",
 		"descripcion": "Animé",
 		"precio": 3500.00
 	},
 	{
 		"id": 3,
-		"img_url": "./img/catalogo/barbie.jpg",
+		"img_url": "barbie.jpg",
 		"img_alt": "Imagen modelo Barbie",
 		"descripcion": "Barbie",
 		"precio": 7500.00
 	},
 	{
 		"id": 4,
-		"img_url": "./img/catalogo/carita.jpg",
+		"img_url": "carita.jpg",
 		"img_alt": "Imagen modelo Carita Feliz",
 		"descripcion": "Carita Feliz",
 		"precio": 3500.00
 	},
 	{
 		"id": 5,
-		"img_url": "./img/catalogo/corazon.jpg",
+		"img_url": "corazon.jpg",
 		"img_alt": "Imagen modelo Corazón",
 		"descripcion": "Corazón",
 		"precio": 3500.00
 	},
 	{
 		"id": 6,
-		"img_url": "./img/catalogo/cuadros.jpg",
+		"img_url": "cuadros.jpg",
 		"img_alt": "Imagen modelo Cuadros",
 		"descripcion": "Cuadros",
 		"precio": 5000.00
 	},
 	{
 		"id": 7,
-		"img_url": "./img/catalogo/dedos.jpg",
+		"img_url": "dedos.jpg",
 		"img_alt": "Imagen modelo Dedos",
 		"descripcion": "Dedos Adams",
 		"precio": 5000.00
 	},
 	{
 		"id": 8,
-		"img_url": "./img/catalogo/escocesa.jpg",
+		"img_url": "escocesa.jpg",
 		"img_alt": "Imagen modelo Escocesa",
 		"descripcion": "Escocesa",
 		"precio": 5000.00
 	},
 	{
 		"id": 9,
-		"img_url": "./img/catalogo/estrellas.jpg",
+		"img_url": "estrellas.jpg",
 		"img_alt": "Imagen modelo Estrellas",
 		"descripcion": "Estrellas",
 		"precio": 5000.00
 	},
 	{
 		"id": 10,
-		"img_url": "./img/catalogo/game.jpg",
+		"img_url": "game.jpg",
 		"img_alt": "Imagen modelo Game",
 		"descripcion": "Game",
 		"precio": 5000.00
 	},
 	{
 		"id": 11,
-		"img_url": "./img/catalogo/lilo.jpg",
+		"img_url": "lilo.jpg",
 		"img_alt": "Imagen modelo Lilo & Stich",
 		"descripcion": "Lilo & Stich",
 		"precio": 4000.00
 	},
 	{
 		"id": 12,
-		"img_url": "./img/catalogo/mariposas.jpg",
+		"img_url": "mariposas.jpg",
 		"img_alt": "Imagen modelo Mariposas",
 		"descripcion": "Mariposas",
 		"precio": 5000.00
 	},
 	{
 		"id": 13,
-		"img_url": "./img/catalogo/minie.jpg",
+		"img_url": "minie.jpg",
 		"img_alt": "Imagen modelo Minie",
 		"descripcion": "Mickey & Minie",
 		"precio": 5000.00
 	},
 	{
 		"id": 14,
-		"img_url": "./img/catalogo/new york.jpg",
+		"img_url": "new york.jpg",
 		"img_alt": "Imagen modelo New York",
 		"descripcion": "New York",
 		"precio": 5000.00
 	},
 	{
 		"id": 15,
-		"img_url": "./img/catalogo/race.jpg",
+		"img_url": "race.jpg",
 		"img_alt": "Imagen modelo Race",
 		"descripcion": "Race",
 		"precio": 5000.00
 	},
 	{
 		"id": 16,
-		"img_url": "./img/catalogo/smile.jpg",
+		"img_url": "smile.jpg",
 		"img_alt": "Imagen modelo Smile",
 		"descripcion": "Smile",
 		"precio": 5000.00

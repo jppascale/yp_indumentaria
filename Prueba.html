@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YP Indumentaria</title>
+    <link rel="shortcut icon" href="./img/Logo-150.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Questrial&family=Qwitcher+Grypen&family=Ysabeau+Office:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+        </header>
+        <main class="main">
+            <article class="article">
+                <h3 class="title">Catálogo</h3>
+                    <div class="art">
+                        <div class="grilla_productos">
+                        </div>
+                    </div>
+                    <div class="aside">
+                        <button id="carga_masiva">Cargar Catálogo</button>
+                        <form id="formulario" enctype="multipart/form-data">
+                            <label for="descripcion">Descripción</label>
+                            <input type="text" name="descripcion" id="descripcion" required>
+                            <br>
+                            <label for="precio">Precio</label>
+                            <input type="number" name="precio" id="precio" value="0">
+                            <br>
+                            <label for="img_alt">Descripción imagen</label>
+                            <input type="text" name="img_alt" id="img_alt">
+                            <br>
+                            <label for="archivo">Seleccionar imagen</label>
+                            <input type="file" name="archivo" id="archivo">
+                            <br><br>
+                            <!-- <input type="hidden" name="idProducto" id="idProducto" value=""> -->
+                            <input type="button" value="Nuevo" id="btnNuevo">
+                            <!-- <input type="submit" value="Actualizar" id="btnActualizar"> -->
+                        </form>
+                        <img src="./img/modelos/modelo4.png" alt="Imagen de modelo">
+                    </div>
+            </article>
+        </main>
+        <footer class="footer">
+        </footer>
+    </div>
+
+    <script>
+        let host = 'http://127.0.0.1:5000'
+        //Asociar botón del alta
+        let btnNuevo = document.getElementById('btnNuevo')
+        btnNuevo.addEventListener('click', function (event){
+        // let formulario = document.getElementById('formulario')
+        // formulario.addEventListener('submit', function (event){
+            event.preventDefault()
+        // function guardar_producto(){
+            let formulario = document.getElementById('formulario')
+            let data = new FormData()
+
+            data.append('descripcion', document.getElementById('descripcion').value)
+            data.append('precio', document.getElementById('precio').value)
+            data.append('img_alt', document.getElementById('img_alt').value)
+            data.append('archivo', document.getElementById('archivo').files[0])
+
+            fetch(host + '/producto', {method: 'POST', body: data})
+                // .then(response => {
+                .then( function(response) {
+                    if (response.ok){
+                        return response.json()
+                    }                
+                })
+                // .then(resultado=>{
+                .then( function (resultado){
+                    alert('El producto se ha dado de alta con el ID: ')
+                })
+                // .catch(error=>{
+                .catch(function( error ) {
+                    alert('Error al dar de alta el producto:' + error)
+                })
+                .finally(function (){
+                    document.getElementById('descripcion').value = ''
+                    document.getElementById('precio').value = 0
+                    document.getElementById('img_alt').value = ''
+                    document.getElementById('archivo').value = ''}
+                )
+        // }
+    })
+    </script>
+    <script src="./js/allpages.js"></script>
+</body>
+</html>

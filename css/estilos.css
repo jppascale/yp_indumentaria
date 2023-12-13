@@ -252,12 +252,46 @@ video.aside{
     box-shadow: 0.5rem 0.5rem 1rem var(--gris);
     /* border-radius: 10px; */
     border-color: var(--gris);
+    position: relative;
 }
 
 .producto img{
     width: 75%;
     height: auto;
     border-radius: 10px;
+}
+
+.btn_eliminar{
+    position: absolute;
+    /* width: 10%; */
+    transform: translate(5px, -5px);
+    padding: 1%;
+    right: 0;
+    top: 0;
+    background-color: var(--fucsia);
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.producto h4{
+    cursor: pointer;
+}
+
+.form_crud{
+    line-height: 150%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--gris);
+    border-radius: 5px;
+    padding: 5%;
+}
+
+.boton_crud{
+    background-color: var(--fucsia);
+    padding: 1%;
+    border: 0;
+    font-weight: 500;
+    border-radius: 5px;
 }
 
 
